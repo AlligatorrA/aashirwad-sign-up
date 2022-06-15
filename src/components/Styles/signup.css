@@ -1,0 +1,22 @@
+.parent {
+    width: 100%;
+}
+
+.picture {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img {
+    filter: drop-shadow(1px 1px 200px var(--color-bg-varient));
+}
+
+@media screen and (max-width:500px) {
+    .img {
+        filter: drop-shadow(1px 1px 200px var(--color-primary));
+        width: 100%;
+        object-fit: contain;
+    }
+}
